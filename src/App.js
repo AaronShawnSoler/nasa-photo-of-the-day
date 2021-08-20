@@ -3,6 +3,7 @@ import Axios from 'axios';
 import "./App.css";
 
 import PhotoOfTheDay from "./components/PhotoOfTheDay";
+import Details from "./components/Details";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <PhotoOfTheDay photoURL={nasaPhotoOfTheDay.hdurl}/>
+      <Details details={nasaPhotoOfTheDay}/>
     </div>
   );
 }
